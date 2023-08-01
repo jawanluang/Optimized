@@ -1,0 +1,118 @@
+-------------------------------------------------
+
+Log File 
+
+Name: Student_ Test_17
+Mode: x86_Debug
+
+-------------------------------------------------
+
+
+------- Print 1 -------------
+
+heapStart: 0x012D1A90     
+  heapEnd: 0x012DE290   
+
+pUsedHead: 0x00000000     
+pFreeHead: 0x012D1AAC     
+ pNextFit: 0x012D1AAC   
+
+Heap Hdr   s: 012D1A90  e: 012D1AAC                            size: 0x1c 
+FREE HDR   s: 012D1AAC  e: 012D1AB8  p: 00000000  n: 00000000  size: 0xc    AF: 0 
+FREE       s: 012D1AB8  e: 012DE290                            size: 0xc7d8 
+
+------- Print 2 -------------
+
+heapStart: 0x012D1A90     
+  heapEnd: 0x012DE290   
+
+pUsedHead: 0x012D9FF4     
+pFreeHead: 0x00000000     
+ pNextFit: 0x00000000   
+
+Heap Hdr   s: 012D1A90  e: 012D1AAC                            size: 0x1c 
+USED HDR   s: 012D1AAC  e: 012D1AB8  p: 012D5D48  n: 00000000  size: 0xc    AF: 0 
+USED       s: 012D1AB8  e: 012D5D48                            size: 0x4290 
+USED HDR   s: 012D5D48  e: 012D5D54  p: 012D9FF4  n: 012D1AAC  size: 0xc    AF: 0 
+USED       s: 012D5D54  e: 012D9FF4                            size: 0x42a0 
+USED HDR   s: 012D9FF4  e: 012DA000  p: 00000000  n: 012D5D48  size: 0xc    AF: 0 
+USED       s: 012DA000  e: 012DE290                            size: 0x4290 
+
+------- Print 3 -------------
+
+heapStart: 0x012D1A90     
+  heapEnd: 0x012DE290   
+
+pUsedHead: 0x012D9FF4     
+pFreeHead: 0x012D5D48     
+ pNextFit: 0x012D5D48   
+
+Heap Hdr   s: 012D1A90  e: 012D1AAC                            size: 0x1c 
+USED HDR   s: 012D1AAC  e: 012D1AB8  p: 012D9FF4  n: 00000000  size: 0xc    AF: 0 
+USED       s: 012D1AB8  e: 012D5D48                            size: 0x4290 
+FREE HDR   s: 012D5D48  e: 012D5D54  p: 00000000  n: 00000000  size: 0xc    AF: 0 
+FREE       s: 012D5D54  e: 012D9FF4                            size: 0x42a0 
+USED HDR   s: 012D9FF4  e: 012DA000  p: 00000000  n: 012D1AAC  size: 0xc    AF: 1 
+USED       s: 012DA000  e: 012DE290                            size: 0x4290 
+
+------- Print 4 -------------
+
+heapStart: 0x012D1A90     
+  heapEnd: 0x012DE290   
+
+pUsedHead: 0x012D5D48     
+pFreeHead: 0x00000000     
+ pNextFit: 0x00000000   
+
+Heap Hdr   s: 012D1A90  e: 012D1AAC                            size: 0x1c 
+USED HDR   s: 012D1AAC  e: 012D1AB8  p: 012D9FF4  n: 00000000  size: 0xc    AF: 0 
+USED       s: 012D1AB8  e: 012D5D48                            size: 0x4290 
+USED HDR   s: 012D5D48  e: 012D5D54  p: 00000000  n: 012D9FF4  size: 0xc    AF: 0 
+USED       s: 012D5D54  e: 012D9FF4                            size: 0x42a0 
+USED HDR   s: 012D9FF4  e: 012DA000  p: 012D5D48  n: 012D1AAC  size: 0xc    AF: 0 
+USED       s: 012DA000  e: 012DE290                            size: 0x4290 
+
+------- Print 4 -------------
+
+heapStart: 0x012D1A90     
+  heapEnd: 0x012DE290   
+
+pUsedHead: 0x012D9FF4     
+pFreeHead: 0x012D5D48     
+ pNextFit: 0x012D5D48   
+
+Heap Hdr   s: 012D1A90  e: 012D1AAC                            size: 0x1c 
+USED HDR   s: 012D1AAC  e: 012D1AB8  p: 012D9FF4  n: 00000000  size: 0xc    AF: 0 
+USED       s: 012D1AB8  e: 012D5D48                            size: 0x4290 
+FREE HDR   s: 012D5D48  e: 012D5D54  p: 00000000  n: 00000000  size: 0xc    AF: 0 
+FREE       s: 012D5D54  e: 012D9FF4                            size: 0x42a0 
+USED HDR   s: 012D9FF4  e: 012DA000  p: 00000000  n: 012D1AAC  size: 0xc    AF: 1 
+USED       s: 012DA000  e: 012DE290                            size: 0x4290 
+
+------- Print 5 -------------
+
+heapStart: 0x012D1A90     
+  heapEnd: 0x012DE290   
+
+pUsedHead: 0x012D9FF4     
+pFreeHead: 0x012D1AAC     
+ pNextFit: 0x012D1AAC   
+
+Heap Hdr   s: 012D1A90  e: 012D1AAC                            size: 0x1c 
+FREE HDR   s: 012D1AAC  e: 012D1AB8  p: 00000000  n: 00000000  size: 0xc    AF: 0 
+FREE       s: 012D1AB8  e: 012D9FF4                            size: 0x853c 
+USED HDR   s: 012D9FF4  e: 012DA000  p: 00000000  n: 00000000  size: 0xc    AF: 1 
+USED       s: 012DA000  e: 012DE290                            size: 0x4290 
+
+------- Print 6 -------------
+
+heapStart: 0x012D1A90     
+  heapEnd: 0x012DE290   
+
+pUsedHead: 0x00000000     
+pFreeHead: 0x012D1AAC     
+ pNextFit: 0x012D1AAC   
+
+Heap Hdr   s: 012D1A90  e: 012D1AAC                            size: 0x1c 
+FREE HDR   s: 012D1AAC  e: 012D1AB8  p: 00000000  n: 00000000  size: 0xc    AF: 0 
+FREE       s: 012D1AB8  e: 012DE290                            size: 0xc7d8 
