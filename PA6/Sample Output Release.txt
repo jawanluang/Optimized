@@ -1,0 +1,85 @@
+
+****************************************
+**      Framework: 3.64               **
+**   C++ Compiler: 192930139          **
+**  Tools Version: 14.29.30133        **
+**    Windows SDK: 10.0.20348.0       **
+**   Mem Tracking: --> DISABLED <--   **
+**           Mode: x86 Release        **
+****************************************
+
+------------------- Testing RELEASE ----------------------
+
+ PASSED: Lerp_Tests_Test 
+ PASSED: Matrix_Vect_Test 
+ PASSED: Triangle_Test 
+ PASSED: Vect_Matrix_Test 
+ PASSED: Matrix_Matrix_Test 
+ PASSED: Row_Tests_Test 
+ PASSED: Col_Tests_Test 
+
+  --- Tests Results ---    
+
+[x86 Release] Ignored: 0
+[x86 Release]  Passed: 7
+[x86 Release]  Failed: 0
+
+   Test Count: 7
+ Indiv Checks: 132
+         Mode: x86 Release 
+
+-----------------
+
+Performance tests: 
+    Begin()
+
+---------- Matrix ----------------
+         Matrix Orig: 3.50017 s    :-6515.140625 -9062.146484 7572.377930 -0.040000
+                                   :11619.179688 16160.361328 -13504.964844 0.070000
+                                   :6515.140625 9062.146484 -7572.377930 0.040000
+                                   :-1628.785156 -2265.536621 1893.094482 -0.010000
+                SIMD: 1.47317 s    :-6515.140625 -9062.146484 7572.377930 -0.040000
+                                   :10878.101562 15130.732422 -12643.317383 0.070000
+                                   :6515.140625 9062.146484 -7572.377930 0.040000
+                                   :-1538.611328 -2140.107910 1788.285156 -0.010000
+         Matrix SIMD: 1.473174 s ---> Unit Test Passed
+               Ratio: 2.375936
+
+---------- Vect * Matrix ----------------
+  Vect * Matrix Orig: 3.235233 s   :6515.140625 9062.146484 -7572.377930 0.040000
+                SIMD: 2.045483 s   :6843.492188 9519.001953 -7953.636719 0.040000
+             vM SIMD: 2.045483 s ---> Unit Test Passed
+               Ratio: 1.581648
+
+---------- Matrix * Vect ----------------
+  Matrix * Vect Orig: 3.303360 s   :6515.140625 9062.146484 -7572.377930 0.040000
+                SIMD: 2.098425 s   :6515.140625 9062.146484 -7572.377930 0.040000
+             Mv SIMD: 2.098425 s ---> Unit Test Passed
+               Ratio: 1.574210
+
+---------- LERP ----------------
+           LERP Orig: 4.569094 s   :16.183453 75.259201 34.153076 39.996334
+                SIMD: 1.208340 s   :16.183453 75.259201 34.153076 39.996334
+           LERP SIMD: 1.208340 s ---> Unit Test Passed
+               Ratio: 3.781299
+
+---------- TRIANGLE ----------------
+       Triangle Orig: 1.220840 s   :-18075051592.830990 
+                SIMD: 0.528266 s   :-18075051592.830990 
+       Triangle SIMD: 0.528266 s ---> Unit Test Passed
+               Ratio: 2.311031
+
+---------- rowMajor ----------------
+       rowMajor Orig: 4.003832 s   :2.688214 2.448029 4.739550 0.747000
+                SIMD: 2.213897 s   :2.688214 2.448029 4.739550 0.747000
+       rowMajor SIMD: 2.213897 s ---> Unit Test Passed 
+               Ratio: 1.808500
+
+---------- colMajor ----------------
+       colMajor Orig: 10.255917 s    :1.334378 2.824099 4.656515 1.313000
+                SIMD: 2.197084 s    :1.334379 2.824100 4.656515 1.313000
+       colMajor SIMD: 2.197084 s ---> Unit Test Passed
+               Ratio: 4.667968
+
+Performance tests: done() 
+

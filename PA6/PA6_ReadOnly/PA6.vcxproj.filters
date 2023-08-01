@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\Test\PerformanceTest.h">
+      <Filter>_Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6_ReadOnly\Matrix.h">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6_ReadOnly\Vect4D.h">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\_UnitTestConfiguration.h">
+      <Filter>Source Files\Unit Test Configuration %28Enable Tests here%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Matrix_Col_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Col_Major</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Matrix_M_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Matrix_Mv_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Matrix_Vect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Vect_M_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Vect_vM_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Vect_Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Vect_Row_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Row_Major</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Vect_Mv_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Matrix_Vect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Vect_Col_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Col_Major</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Vect_LERP_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\LERP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Matrix_Row_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Row_Major</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Matrix_vM_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Vect_Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA6\Vect_Triangle_SIMD.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Triangle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{2247e4b8-afde-4487-aae8-ed106c51fa0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Test">
+      <UniqueIdentifier>{107099dd-0440-40c2-af8c-fc3c6d6b86d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4564af56-4ffb-4e15-b310-463c2069c999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Do NOT Modify">
+      <UniqueIdentifier>{66c08a68-c9a6-49d0-9969-ee3f02b38d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29">
+      <UniqueIdentifier>{e1f8add4-a349-44af-934f-119c18b41ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Row_Major">
+      <UniqueIdentifier>{8319777b-9c3d-40a6-9c64-230943c07af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Col_Major">
+      <UniqueIdentifier>{94784c7d-c415-4854-a91a-8bc849de0449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Vect_Matrix">
+      <UniqueIdentifier>{13c18143-c85b-4996-bed5-eebfc0fedfc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Matrix_Vect">
+      <UniqueIdentifier>{ffa4025c-0eb1-4e5b-9e3c-1048d3a2db6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Matrix">
+      <UniqueIdentifier>{801cd223-3c13-4822-b13c-c7fd82498bfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\LERP">
+      <UniqueIdentifier>{d70fa4f3-701e-4e1f-b4e1-455d4b113796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Unit Test Configuration %28Enable Tests here%29">
+      <UniqueIdentifier>{853706f7-dfab-41f1-9af6-8e415778343e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Triangle">
+      <UniqueIdentifier>{991f653b-4711-40a5-a603-2b87f36e4c91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>_Framework</Filter>
+    </None>
+    <None Include="..\Test\__DO NOT MODIFY__">
+      <Filter>_Test</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Test\Performance_RowMajorCpp.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_RowMajorSIMD.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\PerformanceTest.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_ColMajorCPP.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_ColMajorSIMD.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_VectMatrixCpp.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_VectMatrixSIMD.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_MatrixVectCpp.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_MatrixVectSIMD.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_MatrixCpp.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_MatrixSIMD.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_LERPCpp.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_LERPSIMD.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Unit_Verify_Col_Math.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Unit_Verify_Row_Math.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Unit_Verify_Vect_Matrix_Math.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Unit_Verify_Matrix_Matrix_Math.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Unit_Verify_Matrix_Vect_Math.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Unit_Verify_LERP_Math.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6_ReadOnly\main.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6_ReadOnly\Matrix.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6_ReadOnly\Vect4D.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Matrix_Col_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Col_Major</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Matrix_M_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Matrix_Mv_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Matrix_Vect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Vect_M_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Vect_vM_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Vect_Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Vect_Row_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Row_Major</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Vect_Mv_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Matrix_Vect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Vect_Col_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Col_Major</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Vect_LERP_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\LERP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Matrix_Row_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Row_Major</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Matrix_vM_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Vect_Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA6\Vect_Triangle_SIMD.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_TriangleCpp.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Performance_TriangleSIMD.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\Unit_Verify_Triangle_Math.cpp">
+      <Filter>_Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

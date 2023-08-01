@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AA3B692C-47C7-4345-AF89-C10BB7ACCD9F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PA2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SIMD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;BOOSTER;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)Test;$(SolutionDir)PA6;$(SolutionDir)PA6_ReadOnly</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <WarningVersion>
+      </WarningVersion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;BOOSTER;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)Test;$(SolutionDir)PA6;$(SolutionDir)PA6_ReadOnly</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WarningVersion>
+      </WarningVersion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PA6\Matrix_Col_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Matrix_Mv_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Matrix_M_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Matrix_Row_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Matrix_vM_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Vect_Col_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Vect_LERP_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Vect_Mv_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Vect_M_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Vect_Row_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Vect_Triangle_SIMD.cpp" />
+    <ClCompile Include="..\PA6\Vect_vM_SIMD.cpp" />
+    <ClCompile Include="..\PA6_ReadOnly\main.cpp" />
+    <ClCompile Include="..\PA6_ReadOnly\Matrix.cpp" />
+    <ClCompile Include="..\PA6_ReadOnly\Vect4D.cpp" />
+    <ClCompile Include="..\Test\Performance_ColMajorCPP.cpp" />
+    <ClCompile Include="..\Test\Performance_ColMajorSIMD.cpp" />
+    <ClCompile Include="..\Test\Performance_LERPCpp.cpp" />
+    <ClCompile Include="..\Test\Performance_LERPSIMD.cpp" />
+    <ClCompile Include="..\Test\Performance_MatrixCpp.cpp" />
+    <ClCompile Include="..\Test\Performance_MatrixSIMD.cpp" />
+    <ClCompile Include="..\Test\Performance_MatrixVectCpp.cpp" />
+    <ClCompile Include="..\Test\Performance_MatrixVectSIMD.cpp" />
+    <ClCompile Include="..\Test\Performance_TriangleCpp.cpp" />
+    <ClCompile Include="..\Test\Performance_TriangleSIMD.cpp" />
+    <ClCompile Include="..\Test\Performance_VectMatrixCpp.cpp" />
+    <ClCompile Include="..\Test\Performance_VectMatrixSIMD.cpp" />
+    <ClCompile Include="..\Test\Unit_Verify_LERP_Math.cpp" />
+    <ClCompile Include="..\Test\Unit_Verify_Matrix_Vect_Math.cpp" />
+    <ClCompile Include="..\Test\Unit_Verify_Triangle_Math.cpp" />
+    <ClCompile Include="..\Test\Unit_Verify_Vect_Matrix_Math.cpp" />
+    <ClCompile Include="..\Test\Unit_Verify_Matrix_Matrix_Math.cpp" />
+    <ClCompile Include="..\Test\Unit_Verify_Row_Math.cpp" />
+    <ClCompile Include="..\Test\Unit_Verify_Col_Math.cpp" />
+    <ClInclude Include="..\Framework\Framework.h" />
+    <ClInclude Include="..\PA6\Matrix_Col_SIMD.h" />
+    <ClInclude Include="..\PA6\Matrix_Mv_SIMD.h" />
+    <ClInclude Include="..\PA6\Matrix_M_SIMD.h" />
+    <ClInclude Include="..\PA6\Matrix_Row_SIMD.h" />
+    <ClInclude Include="..\PA6\Matrix_vM_SIMD.h" />
+    <ClInclude Include="..\PA6\Vect_Col_SIMD.h" />
+    <ClInclude Include="..\PA6\Vect_LERP_SIMD.h" />
+    <ClInclude Include="..\PA6\Vect_Mv_SIMD.h" />
+    <ClInclude Include="..\PA6\Vect_M_SIMD.h" />
+    <ClInclude Include="..\PA6\Vect_Row_SIMD.h" />
+    <ClInclude Include="..\PA6\Vect_Triangle_SIMD.h" />
+    <ClInclude Include="..\PA6\Vect_vM_SIMD.h" />
+    <ClInclude Include="..\PA6\_UnitTestConfiguration.h" />
+    <ClInclude Include="..\PA6_ReadOnly\Matrix.h" />
+    <ClInclude Include="..\PA6_ReadOnly\Vect4D.h" />
+    <ClInclude Include="..\Test\PerformanceTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__" />
+    <None Include="..\Test\__DO NOT MODIFY__" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Test\PerformanceTest.cpp" />
+    <ClCompile Include="..\Test\Performance_RowMajorCpp.cpp" />
+    <ClCompile Include="..\Test\Performance_RowMajorSIMD.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
