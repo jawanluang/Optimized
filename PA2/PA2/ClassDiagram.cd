@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HotCold">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACgAAIAAkAAAAAIAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>HotCold.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pHotHead" />
+      <Field Name="pColdHead" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ColdNode">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAERAAAAAABQgEAAAAAAQAAAAEAAAAAAhgpUEAIAA=</HashCode>
+      <FileName>ColdNode.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pHot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HotNode">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAEAAAAAIAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>HotNode.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pCold" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

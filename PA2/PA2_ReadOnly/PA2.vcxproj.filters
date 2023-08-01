@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{593ae2fd-3512-4dd6-ae52-42ce0cf59e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Tests">
+      <UniqueIdentifier>{c1776a87-ec6f-4138-bdc6-272f7ff41428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Do NOT Modify">
+      <UniqueIdentifier>{7bf6f15a-b713-48cd-8258-ad790e90bbae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29">
+      <UniqueIdentifier>{7733924c-1d9f-403f-96c8-3b7c1d83ae3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Unit Test Configuration %28Enable Tests here%29">
+      <UniqueIdentifier>{66abc526-ed06-4a6a-b226-7efb0835fe5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Align problem">
+      <UniqueIdentifier>{be2e7c56-65f1-4d99-8175-16e4191610a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem">
+      <UniqueIdentifier>{6db16903-3609-4908-9ed3-040bb0420bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Jedi">
+      <UniqueIdentifier>{6cb8f25a-564b-4009-a7f2-4bbcc06aec7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\HotCold">
+      <UniqueIdentifier>{cb4c41b6-83f0-4c7d-b11c-7467cdfa149a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Data">
+      <UniqueIdentifier>{2d3859c6-0ddc-41e8-a8d0-57825aff94e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Test\__DO NOT MODIFY__">
+      <Filter>_Tests</Filter>
+    </None>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>_Framework</Filter>
+    </None>
+    <None Include="..\PA2\ClassDiagram.cd">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Test\AlignmentPrint_Tests.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\AlignmentRework_Tests.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\BloatedFindKey_Tests.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\HotColdConvert_Tests.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\HotColdLink_Tests.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\HotColdTiming_Tests.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="Bloated.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\Align.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Align problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\AlignData.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Align problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\JediHotColdConvert_Tests.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\JediColdNode.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Jedi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\JediHotCold.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Jedi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\Bloated_FindKey.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\HotCold</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\ColdNode.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\HotCold</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\HotCold.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\HotCold</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\HotNode.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\HotCold</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\Matrix.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA2\Vect.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\JediHotColdTiming_Tests.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bloated.h">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClInclude>
+    <ClInclude Include="Align.h">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\AlignData.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Align problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\ReworkData.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Align problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\_UnitTestConfiguration.h">
+      <Filter>Source Files\Unit Test Configuration %28Enable Tests here%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\JediColdNode.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Jedi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\JediHotCold.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Jedi</Filter>
+    </ClInclude>
+    <ClInclude Include="JediHotNode.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Jedi</Filter>
+    </ClInclude>
+    <ClInclude Include="JediRedirect.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Jedi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\ColdNode.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\HotCold</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\HotCold.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\HotCold</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\HotNode.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\HotCold</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\Matrix.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA2\Vect.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29\Linked List problem\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
