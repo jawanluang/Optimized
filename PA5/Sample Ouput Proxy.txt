@@ -1,0 +1,89 @@
+Proxy - Assignment
+	Need to Build in 2 configurations:
+	DEBUG, RELEASE
+
+Configuration:  DEBUG
+
+	// Proxy is NOT a speed increase in debug.. focus on the release numbers
+
+        ****************************************
+        **      Framework: 3.67               **
+        **   C++ Compiler: 192930141          **
+        **  Tools Version: 14.29.30133        **
+        **    Windows SDK: 10.0.20348.0       **
+        **   Mem Tracking: enabled            **
+        **           Mode: x86 Debug          **
+        ****************************************
+
+        --------------------------------
+            Memory Tracking: start()    
+        --------------------------------
+
+        ------------------- Testing DEBUG ------------------------
+
+
+         A: 118601536.000000 62361676.000000 
+        AA: 118601536.000000 62361676.000000 
+
+           No_Proxy: 0.291921 s
+        using_Proxy: 0.383156 s
+              Ratio: 0.761884 
+
+         PASSED: Proxy_Timing_Test 
+
+          --- Tests Results ---    
+
+        [x86 Debug] Ignored: 0
+        [x86 Debug]  Passed: 1
+        [x86 Debug]  Failed: 0
+
+           Test Count: 1
+         Indiv Checks: 8
+                 Mode: x86 Debug
+
+        -----------------
+
+        --------------------------------
+            Memory Tracking: passed 
+        --------------------------------
+            Memory Tracking: end()      
+        --------------------------------
+
+
+Configuration:  RELEASE
+
+        ****************************************
+        **      Framework: 3.67               **
+        **   C++ Compiler: 192930141          **
+        **  Tools Version: 14.29.30133        **
+        **    Windows SDK: 10.0.20348.0       **
+        **   Mem Tracking: --> DISABLED <--   **
+        **           Mode: x86 Release        **
+        ****************************************
+
+        ------------------- Testing RELEASE ----------------------
+
+
+         A: 1073741824.000000 536870912.000000 
+        AA: 1073741824.000000 536870912.000000 
+
+           No_Proxy: 2.334944 s
+        using_Proxy: 0.597503 s
+              Ratio: 3.907836 
+
+         PASSED: Proxy_Timing_Test 
+
+          --- Tests Results ---    
+
+        [x86 Release] Ignored: 0
+        [x86 Release]  Passed: 1
+        [x86 Release]  Failed: 0
+
+           Test Count: 1
+         Indiv Checks: 8
+                 Mode: x86 Release 
+
+        -----------------
+
+
+--- End of file ---

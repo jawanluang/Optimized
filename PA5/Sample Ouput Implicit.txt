@@ -1,0 +1,99 @@
+Implicit - Assignment
+	Need to Build in 3 configurations:
+	DEBUG, RELEASE, PREVENT
+
+Configuration:  DEBUG
+
+		--> Warning: might not be much of a savings...
+
+
+        ****************************************
+        **      Framework: 3.67               **
+        **   C++ Compiler: 192930141          **
+        **  Tools Version: 14.29.30133        **
+        **    Windows SDK: 10.0.20348.0       **
+        **   Mem Tracking: enabled            **
+        **           Mode: x86 Debug          **
+        ****************************************
+
+        --------------------------------
+            Memory Tracking: start()    
+        --------------------------------
+
+        ------ Testing DEBUG ----------
+
+
+          A: 118065640.000000 95675296.000000 110802000.000000
+         AA: 118065640.000000 95675296.000000 110802000.000000
+
+        Implicit_With_Conversion: 1.253595 s  (should be slower)
+          Implicit_No_Conversion: 1.207648 s
+                           Ratio: 1.038047    (faster than implict conversion)
+
+         PASSED: Implicit_Timing_Test 
+
+          --- Tests Results ---    
+
+        [x86 Debug] Ignored: 0
+        [x86 Debug]  Passed: 1
+        [x86 Debug]  Failed: 0
+
+           Test Count: 1
+         Indiv Checks: 10
+                 Mode: x86 Debug 
+
+        -----------------
+
+        --------------------------------
+            Memory Tracking: passed 
+        --------------------------------
+            Memory Tracking: end()      
+        --------------------------------
+
+
+
+Configuration: RELEASE
+
+		---> Warning: should be at least 1.3x faster
+
+        ****************************************
+        **      Framework: 3.67               **
+        **   C++ Compiler: 192930141          **
+        **  Tools Version: 14.29.30133        **
+        **    Windows SDK: 10.0.20348.0       **
+        **   Mem Tracking: --> DISABLED <--   **
+        **           Mode: x86 Release        **
+        ****************************************
+
+        ------------------- Testing RELEASE ----------------------
+
+
+          A: 552208960.000000 345517088.000000 405479808.000000
+         AA: 552208960.000000 345517088.000000 405479808.000000
+
+        Implicit_With_Conversion: 0.108740 s  (should be slower)
+          Implicit_No_Conversion: 0.069610 s
+                           Ratio: 1.562133    (faster than implict conversion)
+
+         PASSED: Implicit_Timing_Test 
+
+          --- Tests Results ---    
+
+        [x86 Release] Ignored: 0
+        [x86 Release]  Passed: 1
+        [x86 Release]  Failed: 0
+
+           Test Count: 1
+         Indiv Checks: 10
+                 Mode: x86 Release 
+
+        -----------------
+
+
+Configuration:  PREVENT
+
+		Should display Errors that prevent implicit conversions
+		I'm grading the technique and the number and kinds of warnings.
+
+
+--- End of file ---

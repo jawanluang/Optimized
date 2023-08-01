@@ -1,0 +1,44 @@
+
+------------------- 
+
+MR_FAST - Settings
+
+Name: Jawan Luangnikone Davis
+
+Compiler Settings
+	- List any changes to the compiler settings here
+	--> Fill in as you improve the tests
+
+example:
+
+Use Unicode For Assembler Listing: orig: <unset>   now:  No <modified>
+
+Changes:
+
+Optimization: 			orig: Disabled (/Od)		now: Maximum Optimization (Favor Speed) (/O2)
+
+Favor Size Or Speed: 		orig: Neither			now: Favor fast code (/Ot)
+
+Inline Function Expansion: 	orig: Default			now: Any Suitable (/Ob2)
+
+Enable Intrinsic Functions: 	orig: No			now: Yes (/Oi)
+
+Omit Frame Pointers: 		orig: No			now: Yes (/Oy)
+
+Enable Fiber-Safe Optimizations: orig: No			now: Yes (/GT)
+
+Whole Program Optimization: 	orig: No			now: Yes (/GL)
+
+Enable Enhanced Instruction Set: orig: Not Set <unset>		now: Streaming SIMD Extensions 2 (/arch:SSE2)
+
+Floating Point Model: 		orig: Precise (/fp:precise)	now: Fast (/fp:fast)
+
+Enable Floating Point Exceptions: orig: <unset> 		now: No (/fp:except-)
+
+Enable Run-Time Type Information: orig: <unset>			now: No (/GR-)
+
+Enable type conversion rules: 	orig: <unset>			now: Yes (/Zc:rvalueCast)
+
+Use Unicode For Assembler Listing: orig: <unset>   		now:  No <modified>
+
+--- End of File

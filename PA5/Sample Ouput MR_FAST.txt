@@ -1,0 +1,166 @@
+Benchmark - Assignment
+	Need to Build in 3 configurations:
+	DEBUG, RELEASE, MR_FAST
+
+
+Configuration:  DEBUG
+
+	   ---> Do not adjust settings <----
+
+		****************************************
+		**      Framework: 3.67               **
+		**   C++ Compiler: 192930141          **
+		**  Tools Version: 14.29.30133        **
+		**    Windows SDK: 10.0.20348.0       **
+		**   Mem Tracking: enabled            **
+		**           Mode: x86 Debug          **
+		****************************************
+
+		--------------------------------
+			Memory Tracking: start()    
+		--------------------------------
+
+		------ Testing DEBUG ----------
+
+
+		A: -33554432.000000 134217728.000000  
+
+		Benchmarks: 
+			---Bloated---
+				  Create Bloated: 20.498280 s
+						Find Key: 21.247999 ms
+			---Memory---
+				   Memory Stress: 2.001536 s
+			---Math----
+					 Math Stress: 9.634767 s
+
+		 PASSED: Benchmark_Timing_Test 
+
+		  --- Tests Results ---    
+
+		[x86 Debug] Ignored: 0
+		[x86 Debug]  Passed: 1
+		[x86 Debug]  Failed: 0
+
+		   Test Count: 1
+		 Indiv Checks: 9
+				 Mode: x86 Debug 
+
+		-----------------
+
+		--------------------------------
+			Memory Tracking: passed 
+		--------------------------------
+			Memory Tracking: end()      
+		--------------------------------
+
+Configuration:  RELEASE
+
+	   ---> Do not adjust settings <----
+
+
+		****************************************
+		**      Framework: 3.67               **
+		**   C++ Compiler: 192930141          **
+		**  Tools Version: 14.29.30133        **
+		**    Windows SDK: 10.0.20348.0       **
+		**   Mem Tracking: --> DISABLED <--   **
+		**           Mode: x86 Release        **
+		****************************************
+
+		------------------- Testing RELEASE ----------------------
+
+
+		A: -33554432.000000 134217728.000000  
+
+		Benchmarks: 
+			---Bloated---
+				  Create Bloated: 4.442873 s
+						Find Key: 20.707401 ms
+			---Memory---
+				   Memory Stress: 0.536824 s
+			---Math----
+					 Math Stress: 1.037589 s
+
+		 PASSED: Benchmark_Timing_Test 
+
+		  --- Tests Results ---    
+
+		[x86 Release] Ignored: 0
+		[x86 Release]  Passed: 1
+		[x86 Release]  Failed: 0
+
+		   Test Count: 1
+		 Indiv Checks: 9
+				 Mode: x86 Release 
+
+		-----------------
+
+
+Configuration:  MR_FAST
+
+		Remember your should be getting MR_FAST much faster - this is the starting point.
+		What's the goal... experiment and get it faster than your RELEASE MODE
+
+		--> CHANGE complier settings for MR_FAST <---
+
+		****************************************
+		**      Framework: 3.67               **
+		**   C++ Compiler: 192930141          **
+		**  Tools Version: 14.29.30133        **
+		**    Windows SDK: 10.0.20348.0       **
+		**   Mem Tracking: --> DISABLED <--   **
+		**           Mode: MR_FAST            **
+		****************************************
+
+		------------------- Testing MR_FAST ----------------------
+
+
+		A: -33554432.000000 134217728.000000  
+
+		Benchmarks: 
+			---Bloated---
+				  Create Bloated: xxxxxxx s
+						Find Key: xxxxxxx ms
+			---Memory---
+				   Memory Stress: xxxxxxx s
+			---Math----
+					 Math Stress: xxxxxxx s
+
+		 PASSED: Benchmark_Timing_Test 
+
+		  --- Tests Results ---    
+
+		[x86 Release] Ignored: 0
+		[x86 Release]  Passed: 1
+		[x86 Release]  Failed: 0
+
+		   Test Count: 1
+		 Indiv Checks: 11
+				 Mode: x86 Release 
+
+		-----------------
+
+
+
+Benchmark_MR_FAST_SETTINGS.TXT:  (this file is in MR_Fast project)
+
+		(Fill in as you improve the tests)
+
+		------------------- 
+
+		MR_FAST - Settings
+
+		Name: Keenan  (sample)
+
+		Compiler Settings
+		  - List any changes to the compiler settings here
+
+		example:
+
+		Use Unicode For Assembler Listing: orig: <unset>   now:  No
+
+		-------------------
+			
+
+--- End of file ---

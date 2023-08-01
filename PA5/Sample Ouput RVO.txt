@@ -1,0 +1,90 @@
+RVO - Assignment
+	Need to Build in 2 configurations:
+	DEBUG, RELEASE
+
+Configuration:  DEBUG
+
+
+        ****************************************
+        **      Framework: 3.67               **
+        **   C++ Compiler: 192930141          **
+        **  Tools Version: 14.29.30133        **
+        **    Windows SDK: 10.0.20348.0       **
+        **   Mem Tracking: enabled            **
+        **           Mode: x86 Debug          **
+        ****************************************
+
+        --------------------------------
+            Memory Tracking: start()    
+        --------------------------------
+
+        ------ Testing DEBUG ----------
+
+
+         A: 35020.148438 131208.890625 
+        AA: 35020.148438 131208.890625 
+
+           No_RVO: 0.998446 s
+        using_RVO: 0.483023 s
+            Ratio: 2.067075 
+
+         PASSED: RVO_Timing_Test 
+
+          --- Tests Results ---    
+
+        [x86 Debug] Ignored: 0
+        [x86 Debug]  Passed: 1
+        [x86 Debug]  Failed: 0
+
+           Test Count: 1
+         Indiv Checks: 12
+                 Mode: x86 Debug 
+
+        -----------------
+
+        --------------------------------
+            Memory Tracking: passed 
+        --------------------------------
+            Memory Tracking: end()      
+        --------------------------------
+
+Configuration:  RELEASE
+
+	--> Don't worry it should around slightly better than ~1.10 ratio
+
+
+        ****************************************
+        **      Framework: 3.67               **
+        **   C++ Compiler: 192930141          **
+        **  Tools Version: 14.29.30133        **
+        **    Windows SDK: 10.0.20348.0       **
+        **   Mem Tracking: --> DISABLED <--   **
+        **           Mode: x86 Release        **
+        ****************************************
+
+        ------------------- Testing RELEASE ----------------------
+
+
+         A: 199849.937500 793485.250000 
+        AA: 199849.937500 793485.250000 
+
+           No_RVO: 1.132253 s
+        using_RVO: 0.789936 s
+            Ratio: 1.433348 
+
+         PASSED: RVO_Timing_Test 
+
+          --- Tests Results ---    
+
+        [x86 Release] Ignored: 0
+        [x86 Release]  Passed: 1
+        [x86 Release]  Failed: 0
+
+           Test Count: 1
+         Indiv Checks: 12
+                 Mode: x86 Release 
+
+        -----------------
+		
+
+--- End of file ---
