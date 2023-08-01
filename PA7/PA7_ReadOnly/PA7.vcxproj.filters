@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{593ae2fd-3512-4dd6-ae52-42ce0cf59e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Tests">
+      <UniqueIdentifier>{c1776a87-ec6f-4138-bdc6-272f7ff41428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Do NOT Modify">
+      <UniqueIdentifier>{7bf6f15a-b713-48cd-8258-ad790e90bbae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Unit Test Configuration %28Enable Tests here%29">
+      <UniqueIdentifier>{7dedd25c-80c3-4086-a959-c6746b28c5f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Refactor %28Do not Add or Delete Files%29">
+      <UniqueIdentifier>{7733924c-1d9f-403f-96c8-3b7c1d83ae3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Test\1_InsertSort_Test.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\2_MergeSort_Test.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\3_ComboSort_Test.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\0_CreateList_Test.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\4_WriteToFile_Test.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\5_ReconstructFromFile_Test.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\6_Print_Results.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="AList.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="FileList_ReadOnly.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchList_ReadOnly.cpp">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA7\FileList.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PA7\SearchList.cpp">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA7\_UnitTestConfiguration.h">
+      <Filter>Source Files\Unit Test Configuration %28Enable Tests here%29</Filter>
+    </ClInclude>
+    <ClInclude Include="AList.h">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Source Files\Do NOT Modify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA7\FileList.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PA7\SearchList.h">
+      <Filter>Source Files\Refactor %28Do not Add or Delete Files%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>_Framework</Filter>
+    </None>
+    <None Include="..\Test\__DO NOT MODIFY__">
+      <Filter>_Tests</Filter>
+    </None>
+  </ItemGroup>
+</Project>
